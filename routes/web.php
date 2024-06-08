@@ -7,6 +7,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/writeme', function () {
+    return "Contact";
+});
+
+Route::get('/contact', function () {
+    return "Enjoy my web";
+});
+
+Route::get('/prueba', function () {
+    $msg = "Bienvenido";
+    $data = ['msg' => $msg, 'nombre'=>'Cristian'];
+    return view ('bienvenido', $data);
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
