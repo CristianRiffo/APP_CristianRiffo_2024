@@ -1,0 +1,1 @@
+<h1>Hola desde test/custom.blade.php</h1>

@@ -1,7 +1,10 @@
 <?php
-
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\test\pruebacontroller;
+use App\Http\Controllers\prueba;
+
 use Illuminate\Support\Facades\Route;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -12,8 +15,14 @@ Route::get('/writeme', function () {
 });
 
 Route::get('/contact', function () {
-    return "Enjoy my web";
-});
+    return view("contact");
+})->name('contact');
+
+Route::get('/contact2', function () {
+    return view("contact2");
+})->name('contact2');
+
+Route::get('/test',[pruebacontroller::class,'index']);
 
 Route::get('/prueba', function () {
     $msg = "Bienvenido";
