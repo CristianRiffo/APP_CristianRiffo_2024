@@ -1,1 +1,1 @@
-<h1>Hola desde test/custom.blade.php</h1>
+<h1>{{$mensaje}}</h1>

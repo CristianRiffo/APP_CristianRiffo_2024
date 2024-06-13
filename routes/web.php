@@ -22,7 +22,7 @@ Route::get('/contact2', function () {
     return view("contact2");
 })->name('contact2');
 
-Route::get('/test',[pruebacontroller::class,'index']);
+Route::get('/test/{mensaje}',[pruebacontroller::class,'index']);
 
 Route::get('/prueba', function () {
     $msg = "Bienvenido";

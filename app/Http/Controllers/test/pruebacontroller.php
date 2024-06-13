@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class pruebacontroller extends Controller
 {
-    public function index(){
-
-        return view('test.custom');
+    public function index($mensaje){
+        
+        return view('test.custom',['mensaje'=>$mensaje]);
     }
 
 
